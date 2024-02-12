@@ -23,6 +23,12 @@ public class OrderRepository {
                 case "mocha":
                     beverage = new Mocha(beverage);
                     break;
+                case "soy":
+                    beverage = new Soy(beverage);
+                    break;
+                case "Whip":
+                    beverage = new Whip(beverage);
+                    break;
                 default:
                     throw new Exception("Condiment type '%s' is not valid".formatted(condiment));
             }
